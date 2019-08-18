@@ -1,43 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+html { overflow-y: scroll; height: 100%;}
+
 body {
-    margin: 60px auto;
     width: 70%;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  	background: rgb(255, 252, 245);
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+
+.header
+{
+  background: rgb(63, 191, 115);
+  color: #FFFFFF;
+  height: 90px;
+}
+
+.content
+{
+    background: #FFF;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.footer {
+    background: #FFF;
+  	height: 55px;
+}
+
+nav {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float:right;
+}
+
+nav ul {
+    font-family:'Century Gothic', 'Arial', 'Sans-Serif';
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+
+nav ul li {
     display: inline;
+    color: #FFFFFF;
+    margin: auto;
     margin-right: 20px;
+}
+
+.header a, .site-info a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.site-info a:hover {
+    text-decoration: none;
+}
+
+.footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.site-info {
+    font-family:'Century Gothic', 'Arial', 'Sans-Serif';
+    font-size: 3em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+    font-weight: bold;
+    float:left;
+    color: #FFFFFF;
 }
 a {
     text-decoration: none;
-    color: #999;
 }
+
 a:hover {
     text-decoration: underline;
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Century Gothic', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.5em;
+    font-size: 1.25em;
     line-height: 1.4em;
     color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-family:'Roboto Slab';
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
 ul.posts li {
     list-style: none;
 }
+
+/* clearfix start */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    height: 100%;
+    width: 50%;
+    min-width: 1106px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background: #FFF url(images/fond_content.jpg) repeat-x top; */
+}
+html[xmlns] .clearfix {
+    display: block;
+    display: inline-block;
+}
+* html .clearfix {
+    height: 1%;
+}
+/* clearfix end */

@@ -4,25 +4,38 @@
     <title>{{ page.title }}</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/sss/sss.css" media="all">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="/sss/sss.min.js"></script>
+		<script>jQuery(function($) { $('.slider').sss({slideShow : true}); });</script>
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
+	<div class="clearfix">
+		<div class="header">
+			<div class="site-info"><a href="/">Salim Mansour</a></div>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav>
+		</div>
+		<div class="content">
+			<div class="container">
 
-    {{ content }}
+	    {{ content }}
 
+			</div><!-- /.container -->
 		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:slimnsour@gmail.com">email</a></li>
-        		<li><a href="https://github.com/slimnsour">github.com/slimnsour</a></li>
+		<div class="footer">
+			<nav>
+  		<ul>
+      		<li><a href="mailto:slimnsour@gmail.com">email</a></li>
+      		<li><a href="https://github.com/slimnsour">github</a></li>
 			</ul>
-		</footer>
+			</nav>
+		</div>
+	</div>
 	</body>
 </html>
