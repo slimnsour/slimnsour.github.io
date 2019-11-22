@@ -56,8 +56,8 @@ nav ul li {
     display: inline;
     color: #FFFFFF;
     margin: auto;
-    font-size: 1.25em;
-    margin-right: 10px;
+    font-size: 1.5em;
+    margin-right: 20px;
 }
 
 .nav li.active > a {
