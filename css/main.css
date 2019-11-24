@@ -90,6 +90,16 @@ nav ul li {
     float:left;
     color: #FFFFFF;
 }
+
+.static {
+  position:absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity:0;
+}
+
 a {
     text-decoration: none;
     font-family:'Roboto Slab';
