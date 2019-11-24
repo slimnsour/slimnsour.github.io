@@ -94,28 +94,14 @@ nav ul li {
 .static {
   position:absolute;
   background: white;
-  padding-right: 50px;
 }
 
 .static:hover {
   opacity:0;
 }
 
-.active {
-  padding-right: 50px;
-}
 
 
-@media only screen and (max-device-width: 640px) {
-.static {
-  position:absolute;
-  background: white;
-  padding-right: 10px;
-}
-  .active {
-    padding-right: 10px;
-  }
-}
 
 a {
     text-decoration: none;
